@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'digitaltimer';
+    src: url('https://github.com/akashjoseph02/PRODIGY_WD_02/blob/aae6dc7033570ca871e9f102165b4b235c35eec8/digital-7.ttf') format('truetype'); 
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'digtimeritalic';
+    src: url('https://github.com/akashjoseph02/PRODIGY_WD_02/blob/aae6dc7033570ca871e9f102165b4b235c35eec8/digital-7%20(italic).ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stopwatch,
+.laps-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px; /* Limit width for better mobile experience */
+    margin: 10px;
+}
+
+.stopwatch {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.laps-container {
+    margin-top: 40%; /* Adjusted margin-top for stopwatch height */
+}
+
+#display {
+    font-size: 6em;
+    margin: 10px 0;
+    font-family: 'digitaltimer';
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+button {
+    font-size: 1em;
+    margin: 5px;
+    padding: 8px 15px;
+}
+
+#laps {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align laps to the center */
+    white-space: nowrap;
+}
+
+.lap-item {
+    white-space: nowrap; /* Prevent lap items from breaking into new lines */
+}
